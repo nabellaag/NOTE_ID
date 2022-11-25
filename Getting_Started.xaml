@@ -1,0 +1,232 @@
+﻿<Page x:Class="NOTE_ID.Getting_Started"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:NOTE_ID"
+      mc:Ignorable="d"
+      d:DesignHeight="832"
+      d:DesignWidth="1280"
+      Title="Getting_Started">
+
+    <Grid Background="White">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="1180" />
+
+            </Grid.ColumnDefinitions>
+            <Rectangle HorizontalAlignment="Center"
+                       Height="832"
+                       Stroke="Black"
+                       VerticalAlignment="Center"
+                       Width="100"
+                       Fill="#FF2B2E43" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+
+
+                </Grid.RowDefinitions>
+                <Image Grid.Column="0"
+                       Grid.Row="0"
+                       HorizontalAlignment="Left"
+                       Height="76"
+                       VerticalAlignment="Center"
+                       Width="70"
+                       Source="/Asset/Mask group.png"
+                       Margin="15,0,0,0" />
+                <Image Grid.Row="1"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (13) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="2"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (5) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="3"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (6) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="4"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (8) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="5"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/🦆 icon _task_.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="6"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (10) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="7"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (15) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="8"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="28"
+                       Source="/Asset/+.png"
+                       RenderTransformOrigin="0.5,0.5" />
+
+            </Grid>
+            <TextBlock Grid.Column="1"
+                       FontFamily="Inter"
+                       Text="Share"
+                       FontSize="20"
+                       Margin="773,41,343,755"
+                       FontWeight="Bold" />
+            <Image  Grid.Column="1"
+                    Source="/Asset/🦆 icon _clock outline_.png"
+                    Width="28"
+                    Height="28"
+                    Margin="905,41,247,763" />
+            <Image  Grid.Column="1"
+                    Source="/Asset/🦆 icon _star outline_.png"
+                    Width="28"
+                    Height="28"
+                    Margin="986,41,166,763" />
+            <Image  Grid.Column="1"
+                    Source="/Asset/🦆 icon _more horizontal_.png"
+                    Width="28"
+                    Height="28"
+                    Margin="1069,41,83,763" />
+            <Image HorizontalAlignment="Left"
+                   Height="70"
+                   Margin="35,39,0,0"
+                   VerticalAlignment="Top"
+                   Width="55"
+                   Source="/Asset/Getting Started Hitam.png"
+                   Grid.Column="1" />
+            <TextBlock HorizontalAlignment="Left"
+                       Margin="110,48,0,0"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Top"
+                       FontSize="43"
+                       FontFamily="Inter"
+                       Grid.Column="1"><Run FontWeight="Bold"
+                                            Text="Getting Started" /></TextBlock>
+            <TextBlock HorizontalAlignment="Left"
+                       Margin="112,171,0,0"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Top"
+                       FontSize="28"
+                       FontFamily="Noto Sans"
+                       Grid.Column="1"><Run FontWeight="Bold"
+                                            Text="Here are the basics:" /></TextBlock>
+            <TextBlock HorizontalAlignment="Left"
+                       Margin="143,247,0,0"
+                       TextWrapping="Wrap"
+                       Text="Click anywhere and just start typing"
+                       VerticalAlignment="Top"
+                       FontSize="23"
+                       FontFamily="Inter"
+                       Grid.Column="1" />
+            <TextBlock HorizontalAlignment="Left"
+                       Margin="143,292,0,0"
+                       TextWrapping="Wrap"
+                       Text="Hit / to see all the types of content you can add - headers, videos, sub pages, etc."
+                       VerticalAlignment="Top"
+                       FontSize="23"
+                       FontFamily="Inter"
+                       Grid.Column="1" />
+            <TextBlock HorizontalAlignment="Left"
+                       Margin="143,337,0,0"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Top"
+                       FontSize="23"
+                       FontFamily="Inter"
+                       Grid.Column="1"><Run Text="Highlight any text, and use the menu that pops up to " /><Run FontWeight="Bold"
+                                                                                                                Text="style" /><Run Text=" " /><Run FontStyle="Italic"
+                                                                                                                                                    Text="your" /><Run Text=" writing however " /><Run Text="you"
+                                                                                                                                                                                                       TextDecorations="Underline" /><Run Text=" like" /></TextBlock>
+            <TextBlock HorizontalAlignment="Left"
+                       Margin="143,380,0,0"
+                       TextWrapping="Wrap"
+                       Text="This is a toggle block. Click the little triangle to see more useful tips!"
+                       VerticalAlignment="Top"
+                       FontSize="23"
+                       FontFamily="Inter"
+                       Grid.Column="1" />
+            <Image HorizontalAlignment="Left"
+                   Height="31"
+                   Margin="104,380,0,0"
+                   VerticalAlignment="Top"
+                   Width="31"
+                   Source="/Asset/🦆 icon _arrow right_.png"
+                   Grid.Column="1" />
+            <CheckBox HorizontalAlignment="Left"
+                      Margin="112,255,0,0"
+                      VerticalAlignment="Top"
+                      FontSize="14"
+                      BorderBrush="Black"
+                      Grid.Column="1" />
+            <CheckBox HorizontalAlignment="Left"
+                      Margin="112,300,0,0"
+                      VerticalAlignment="Top"
+                      FontSize="14"
+                      BorderBrush="Black"
+                      Grid.Column="1" />
+            <CheckBox HorizontalAlignment="Left"
+                      Margin="112,345,0,0"
+                      VerticalAlignment="Top"
+                      FontSize="14"
+                      BorderBrush="Black"
+                      Grid.Column="1" />
+
+            <Rectangle HorizontalAlignment="Left"
+                       Height="63"
+                       Margin="1,113,0,0"
+                       VerticalAlignment="Top"
+                       Width="8"
+                       Fill="#FF07FF02" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+    </Grid>
+</Page>

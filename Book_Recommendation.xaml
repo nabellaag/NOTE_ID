@@ -1,0 +1,248 @@
+﻿<Page x:Class="NOTE_ID.Book_Recommendation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:NOTE_ID"
+      mc:Ignorable="d"
+      d:DesignHeight="832"
+      d:DesignWidth="1280"
+      Title="Book_Recommendation">
+
+    <Grid Background="White">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="1120" />
+            </Grid.ColumnDefinitions>
+            <Rectangle HorizontalAlignment="Left"
+                       Height="832"
+                       Stroke="Black"
+                       VerticalAlignment="Center"
+                       Width="100"
+                       Grid.Column="0"
+                       Fill="#FF2B2E43" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+
+
+                </Grid.RowDefinitions>
+                <Image Grid.Column="0"
+                       Grid.Row="0"
+                       HorizontalAlignment="Left"
+                       Height="76"
+                       VerticalAlignment="Center"
+                       Width="70"
+                       Source="/Asset/Mask group.png"
+                       Margin="15,0,0,0" />
+                <Image Grid.Row="1"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (13) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="2"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (5) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="3"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (6) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="4"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (8) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="5"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/🦆 icon _task_.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="6"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (10) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="7"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (15) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="8"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="28"
+                       Source="/Asset/+.png"
+                       RenderTransformOrigin="0.5,0.5" />
+
+            </Grid>
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150*" />
+                    <RowDefinition Height="150*" />
+                    <RowDefinition Height="632*" />
+                </Grid.RowDefinitions>
+
+                <Image HorizontalAlignment="Left"
+                       Height="70"
+                       VerticalAlignment="Center"
+                       Width="70"
+                       Source="/Asset/Untitled design (8) 1.png"
+                       RenderTransformOrigin="0.514,0.419"
+                       Margin="26,0,0,0" />
+                <TextBlock HorizontalAlignment="Left"
+                           Margin="130,43,0,0"
+                           TextWrapping="Wrap"
+                           Text="Book Recommendation"
+                           VerticalAlignment="Top"
+                           FontSize="43"
+                           FontWeight="Bold"
+                           FontFamily="Inter" />
+                <TextBlock Grid.Row="1"
+                           HorizontalAlignment="Left"
+                           Margin="130,19,0,0"
+                           TextWrapping="Wrap"
+                           VerticalAlignment="Top"
+                           FontSize="25"
+                           FontWeight="Regular"
+                           FontFamily="Noto San"><Run Text="You can see book recommendations and click on " /><LineBreak /><Run Text="the book title if you want to read the synopsis.  " /><LineBreak /><Run Text="You can add book to reading list. " /><LineBreak /></TextBlock>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="280" />
+                        <ColumnDefinition Width="280" />
+                        <ColumnDefinition Width="280" />
+                        <ColumnDefinition Width="280" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0"
+                           HorizontalAlignment="Left"
+                           Height="253"
+                           VerticalAlignment="Top"
+                           Width="189"
+                           Source="/Asset/9786024813659_The_Things_You_Can_See_Only_When_You_Slow_Down-1 1.png"
+                           Margin="36,135,0,0" />
+                    <TextBlock HorizontalAlignment="Left"
+                               Margin="22,411,0,0"
+                               TextWrapping="Wrap"
+                               VerticalAlignment="Top"
+                               FontSize="18"
+                               FontWeight="Regular"
+                               FontFamily="Noto San"
+                               RenderTransformOrigin="98.899,-83.531"
+                               TextAlignment="Center"><Run Text="The Things You Can See" /><LineBreak /><Run Text="Only When You Slow Down" /></TextBlock>
+                    <Image Grid.Column="1"
+                           HorizontalAlignment="Left"
+                           Height="253"
+                           VerticalAlignment="Top"
+                           Width="171"
+                           Source="/Asset/bicara itu ada seninya 1.png"
+                           Margin="51,135,0,0" />
+                    <TextBlock Grid.Column="1"
+                               HorizontalAlignment="Left"
+                               Margin="49,411,0,0"
+                               TextWrapping="Wrap"
+                               VerticalAlignment="Top"
+                               FontSize="18"
+                               FontWeight="Regular"
+                               FontFamily="Noto San"
+                               RenderTransformOrigin="98.899,-83.531"
+                               TextAlignment="Center"><Run Text="Bicara Itu Ada Seninya" /></TextBlock>
+                    <Image Grid.Column="2"
+                           HorizontalAlignment="Left"
+                           Height="253"
+                           VerticalAlignment="Top"
+                           Width="173"
+                           Source="/Asset/Business_Model_And_Business_Plan_Di_Era_4 1.png"
+                           Margin="51,135,0,0" />
+                    <TextBlock Grid.Column="2"
+                               HorizontalAlignment="Left"
+                               Margin="43,411,0,0"
+                               TextWrapping="Wrap"
+                               VerticalAlignment="Top"
+                               FontSize="18"
+                               FontWeight="Regular"
+                               FontFamily="Noto San"
+                               RenderTransformOrigin="98.899,-83.531"
+                               TextAlignment="Center"><Run Text="Model and Business Plan" /><LineBreak /><Run Text="Di Era 4.0" /></TextBlock>
+                    <Image Grid.Column="3"
+                           HorizontalAlignment="Center"
+                           Height="253"
+                           VerticalAlignment="Top"
+                           Width="165"
+                           Source="/Asset/the psychology of money 1.png"
+                           Margin="0,135,0,0" />
+                    <TextBlock Grid.Column="3"
+                               HorizontalAlignment="Left"
+                               Margin="61,411,0,0"
+                               TextWrapping="Wrap"
+                               VerticalAlignment="Top"
+                               FontSize="18"
+                               FontWeight="Regular"
+                               FontFamily="Noto San"
+                               RenderTransformOrigin="98.899,-83.531"
+                               TextAlignment="Center"><Run Text="The Psychology Of" /><LineBreak /><Run Text="Money" /></TextBlock>
+
+                    <TextBlock HorizontalAlignment="Left"
+                               Margin="40,49,0,0"
+                               TextWrapping="Wrap"
+                               VerticalAlignment="Top"
+                               FontSize="28"
+                               FontWeight="Regular"
+                               FontFamily="Noto San"><Run FontWeight="Bold"
+                                                          Text="Popular" /></TextBlock>
+
+                </Grid>
+
+
+
+
+
+
+            </Grid>
+
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+        <Rectangle HorizontalAlignment="Left"
+                   Height="63"
+                   Margin="1,387,0,0"
+                   VerticalAlignment="Top"
+                   Width="8"
+                   Fill="#FF07FF02" />
+
+    </Grid>
+</Page>

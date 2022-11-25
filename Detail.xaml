@@ -1,0 +1,321 @@
+﻿<Page x:Class="NOTE_ID.Detail"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:NOTE_ID"
+      mc:Ignorable="d"
+      d:DesignHeight="832"
+      d:DesignWidth="1280"
+      Title="Detail">
+    <Page.Resources>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2"
+                                   StrokeDashArray="1 2"
+                                   Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"
+                                   SnapsToDevicePixels="true"
+                                   StrokeThickness="1" />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background"
+                         Color="#FFDDDDDD" />
+        <SolidColorBrush x:Key="Button.Static.Border"
+                         Color="#FF707070" />
+        <SolidColorBrush x:Key="Button.MouseOver.Background"
+                         Color="#FFBEE6FD" />
+        <SolidColorBrush x:Key="Button.MouseOver.Border"
+                         Color="#FF3C7FB1" />
+        <SolidColorBrush x:Key="Button.Pressed.Background"
+                         Color="#FFC4E5F6" />
+        <SolidColorBrush x:Key="Button.Pressed.Border"
+                         Color="#FF2C628B" />
+        <SolidColorBrush x:Key="Button.Disabled.Background"
+                         Color="#FFF4F4F4" />
+        <SolidColorBrush x:Key="Button.Disabled.Border"
+                         Color="#FFADB2B5" />
+        <SolidColorBrush x:Key="Button.Disabled.Foreground"
+                         Color="#FF838383" />
+        <Style x:Key="ButtonStyle1"
+               TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle"
+                    Value="{StaticResource FocusVisual}" />
+            <Setter Property="Background"
+                    Value="{StaticResource Button.Static.Background}" />
+            <Setter Property="BorderBrush"
+                    Value="{StaticResource Button.Static.Border}" />
+            <Setter Property="Foreground"
+                    Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+            <Setter Property="BorderThickness"
+                    Value="1" />
+            <Setter Property="HorizontalContentAlignment"
+                    Value="Center" />
+            <Setter Property="VerticalContentAlignment"
+                    Value="Center" />
+            <Setter Property="Padding"
+                    Value="1" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="10"
+                                x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter"
+                                              Focusable="False"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              Margin="{TemplateBinding Padding}"
+                                              RecognizesAccessKey="True"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted"
+                                     Value="true">
+                                <Setter Property="BorderBrush"
+                                        TargetName="border"
+                                        Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
+                            </Trigger>
+                            <Trigger Property="IsMouseOver"
+                                     Value="true">
+                                <Setter Property="Background"
+                                        TargetName="border"
+                                        Value="{StaticResource Button.MouseOver.Background}" />
+                                <Setter Property="BorderBrush"
+                                        TargetName="border"
+                                        Value="{StaticResource Button.MouseOver.Border}" />
+                            </Trigger>
+                            <Trigger Property="IsPressed"
+                                     Value="true">
+                                <Setter Property="Background"
+                                        TargetName="border"
+                                        Value="{StaticResource Button.Pressed.Background}" />
+                                <Setter Property="BorderBrush"
+                                        TargetName="border"
+                                        Value="{StaticResource Button.Pressed.Border}" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled"
+                                     Value="false">
+                                <Setter Property="Background"
+                                        TargetName="border"
+                                        Value="{StaticResource Button.Disabled.Background}" />
+                                <Setter Property="BorderBrush"
+                                        TargetName="border"
+                                        Value="{StaticResource Button.Disabled.Border}" />
+                                <Setter Property="TextElement.Foreground"
+                                        TargetName="contentPresenter"
+                                        Value="{StaticResource Button.Disabled.Foreground}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="White">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition Width="920" />
+            </Grid.ColumnDefinitions>
+            <Rectangle HorizontalAlignment="Left"
+                       Height="832"
+                       Stroke="Black"
+                       VerticalAlignment="Center"
+                       Width="100"
+                       Grid.Column="0"
+                       Fill="#FF2B2E43" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+                    <RowDefinition Height="104*" />
+
+
+                </Grid.RowDefinitions>
+                <Image Grid.Column="0"
+                       Grid.Row="0"
+                       HorizontalAlignment="Left"
+                       Height="76"
+                       VerticalAlignment="Center"
+                       Width="70"
+                       Source="/Asset/Mask group.png"
+                       Margin="15,0,0,0" />
+                <Image Grid.Row="1"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (13) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="2"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (5) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="3"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (6) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="4"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (8) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="5"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/🦆 icon _task_.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="6"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (10) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="7"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="30"
+                       Source="/Asset/Untitled design (15) 1.png"
+                       RenderTransformOrigin="0.514,0.419" />
+                <Image Grid.Row="8"
+                       HorizontalAlignment="Center"
+                       Height="37"
+                       VerticalAlignment="Center"
+                       Width="28"
+                       Source="/Asset/+.png"
+                       RenderTransformOrigin="0.5,0.5" />
+
+            </Grid>
+            <Image Grid.Column="2"
+                   HorizontalAlignment="Left"
+                   Height="253"
+                   VerticalAlignment="Top"
+                   Width="171"
+                   Source="/Asset/bicara itu ada seninya 1.png"
+                   Margin="40,100,0,0" />
+            <TextBlock Grid.Column="3"
+                       HorizontalAlignment="Left"
+                       Margin="58,62,0,0"
+                       TextWrapping="Wrap"
+                       Text="Oh Su Hyang"
+                       FontSize="20"
+                       VerticalAlignment="Top"
+                       FontFamily="Inter"
+                       FontStyle="Italic" />
+            <TextBlock Grid.Column="3"
+                       HorizontalAlignment="Left"
+                       Margin="58,98,0,0"
+                       TextWrapping="Wrap"
+                       Text="Bicara Itu Ada Seninya"
+                       FontSize="20"
+                       VerticalAlignment="Top"
+                       FontFamily="Inter"
+                       FontStyle="Normal"
+                       FontWeight="Bold" />
+            <TextBlock Grid.Column="3"
+                       HorizontalAlignment="Left"
+                       Margin="50,236,0,0"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Top"
+                       Width="205"
+                       FontFamily="Inter"
+                       FontSize="16"
+                       TextAlignment="Justify"><Run FontWeight="Bold"
+                                                    Text="Jumlah Halaman" /><Run Text=" " /><LineBreak /><Run Text="256" /><LineBreak /><Run /><LineBreak /><Run FontWeight="Bold"
+                                                                                                                                                                 Text="Tanggal Terbit" /><LineBreak /><Run Text="16 Sep 2019" /><LineBreak /><Run /><LineBreak /><Run FontWeight="Bold"
+                                                                                                                                                                                                                                                                      Text="ISBN" /><LineBreak /><Run Text="9786024553920" /><LineBreak /><Run /></TextBlock>
+            <TextBox Grid.Column="3"
+                     HorizontalAlignment="Left"
+                     Margin="56,165,0,0"
+                     TextWrapping="Wrap"
+                     Text="Sypnosis"
+                     FontSize="18"
+                     FontFamily="Inter"
+                     VerticalAlignment="Top"
+                     Width="199"
+                     FontWeight="Bold"
+                     TextAlignment="Center"
+                     Background="#FFD9D9D9" />
+            <TextBox Grid.Column="3"
+                     HorizontalAlignment="Left"
+                     Margin="255,165,0,0"
+                     TextWrapping="Wrap"
+                     Text="Detail"
+                     FontSize="18"
+                     FontFamily="Inter"
+                     VerticalAlignment="Top"
+                     Width="199"
+                     FontWeight="Bold"
+                     TextAlignment="Center"
+                     Background="White" />
+            <TextBlock Grid.Column="3"
+                       HorizontalAlignment="Left"
+                       Margin="312,235,0,0"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Top"
+                       Width="205"
+                       FontFamily="Inter"
+                       FontSize="16"
+                       TextAlignment="Justify"><Run FontWeight="Bold"
+                                                    Text="Penerbit" /><LineBreak /><Run Text="Bhuana Ilmu Populer" /><LineBreak /><Run /><LineBreak /><Run FontWeight="Bold"
+                                                                                                                                                           Text="Bahasa" /><LineBreak /><Run Text="Indonesia" /></TextBlock>
+
+
+            <Button Style="{DynamicResource ButtonStyle1}"
+                    Grid.Column="3"
+                    Width="159"
+                    Content="Add"
+                    Background="#FF5B5F97"
+                    FontSize="20"
+                    FontWeight="ExtraBold"
+                    FontFamily="Inter"
+                    Foreground="White"
+                    HorizontalAlignment="Left"
+                    Height="46"
+                    Margin="606,507,0,279" />
+
+
+
+
+
+
+
+        </Grid>
+        <Rectangle HorizontalAlignment="Left"
+                   Height="63"
+                   Margin="-1,386,0,0"
+                   VerticalAlignment="Top"
+                   Width="8"
+                   Fill="#FF07FF02" />
+
+
+    </Grid>
+</Page>
